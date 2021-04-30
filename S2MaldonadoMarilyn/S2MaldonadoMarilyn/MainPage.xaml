@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="S2MaldonadoMarilyn.MainPage">
+    <StackLayout>
+        <Frame BackgroundColor="#2196F3" Padding="10" CornerRadius="0">
+            <Label Text="T.Semana2 SIMULADOR DE NOTAS " HorizontalTextAlignment="Center" TextColor="Orange"  FontSize="20"/>
+        </Frame>
+        <Frame BackgroundColor="#92a8d1" Padding="6" CornerRadius="0">
+            <Label Text="NOTAS PARCIAL 1" HorizontalTextAlignment="Center" TextColor="FloralWhite" FontSize="20"/>
+        </Frame>
+
+        <Entry x:Name="textonota1" Keyboard="Numeric"
+               Placeholder="Nota 1"></Entry>
+
+        <Entry x:Name="textonota2" Keyboard="Numeric"
+               Placeholder="Nota 2"></Entry>
+
+        <Entry x:Name="textototal1" IsReadOnly="True" TextColor="Fuchsia"
+               Placeholder="Total 1"></Entry>
+
+        <Button x:Name="suma1"
+                Text="TOTAL"
+                Clicked="suma1_Clicked">
+
+        </Button>
+
+        <Frame BackgroundColor="#92a8d1" Padding="6" CornerRadius="0">
+            <Label Text="NOTAS PARCIAL 2 " HorizontalTextAlignment="Center" TextColor="Azure"  FontSize="20"/>
+        </Frame>
+
+        <Entry x:Name="textonota3" Keyboard="Numeric"
+               Placeholder="Nota3"></Entry>
+
+        <Entry x:Name="textonota4" Keyboard="Numeric"
+               Placeholder="Nota 4">
+
+        </Entry>
+
+        <Entry x:Name="textototal2" IsReadOnly="True" TextColor="DarkSalmon"
+               Placeholder="Total 2">
+
+        </Entry>
+
+        <Button x:Name="suma2"
+                Text="Total2"
+                Clicked="suma2_Clicked">
+
+        </Button>
+
+        <Entry x:Name="total3" IsReadOnly="True" BackgroundColor="Azure"  TextColor="Chocolate"
+               Placeholder="Total Final"></Entry>
+
+        <Button x:Name="suma3"
+                Text="Calcular Nota Final"
+                Clicked="suma3_Clicked">
+
+        </Button>
+
+        <Label Text="Usuario:" TextColor="Black" FontSize="24" Padding="30,0,30,0"/>
+        <Entry x:Name="txtUsuario"/>
+        <Label Text="Clave:" TextColor="Black" FontSize="24" Padding="30,0,30,0"/>
+        <Entry x:Name="txtClave" IsPassword="True"/>
+
+        <Button x:Name="btnIngresar" Text="Ingresar Datos" TextColor="AliceBlue" FontSize="24" Clicked="btnIngresar_Clicked"/>
+
+    </StackLayout>
+</ContentPage>
